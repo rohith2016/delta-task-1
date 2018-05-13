@@ -1,0 +1,42 @@
+
+var namev,idv,csv,wev,punv,knv,comv,ratv,x;
+function newmentee() {
+
+}
+
+function submit(e){
+    e.preventDefault();
+    e.stopPropagation();
+    x=document.getElementById("details");
+    idv=x.Elements["ID"].value;
+    csv=x.Elements["CS"].value;
+    wev=x.Elements["WE"].value;
+    punv=x.Elements["pun"].value;
+    comv=x.Elements["com"].value;
+    knv=x.Elements["KN"].value;
+    ratv=x.Elements["rat"].value;
+    
+    document.getElementById("name").innerHTML = "name:" + namev + "<br>";
+    document.getElementById("ID").innerHTML = "ID:" + idv + "<br>";
+    document.getElementById("CS").innerHTML = "coding skills" + csv + "<br>";
+    document.getElementById("WE").innerHTML = "work etcs:" + wev + "<br>";
+    document.getElementById("pun").innerHTML = "punctuality:" + punv + "<br>";
+    document.getElementById("KN").innerHTML = "knowledge:" + knv + "<br>";
+    document.getElementById("com").innerHTML = "comments:" + comv + "<br>";
+    document.getElementById("rat").innerHTML = "rating:" + ratv + "<br>";
+    return false;
+    
+}
+
+function colour() {
+    if (ratv > 4)
+        return darkgreen;
+    else if (ratv > 3)
+        return green;
+    else if (ratv > 2)
+        return yellow;
+    else if (ratv > 1)
+        return orange;
+    else
+        return red;
+}
