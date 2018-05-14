@@ -5,7 +5,7 @@
     <title>Mentor's Assistant</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="script.js"></script>
+    
     <link href="style.css" rel="stylesheet">
 </head>
 
@@ -14,7 +14,7 @@
         <h1>mentee management</h1>
     </div>
     
-    <form id="details">
+    <form onsubmit="submit(e)" id="details">
         <p>NAME:<input name="name" type="text" size="20"></p> 
         <p>ID:<input name="ID" type="text" size="20"></p> 
         <p>Coding skills:<input name="coding skills" type="text" size="80"></p> 
@@ -23,7 +23,7 @@
         <p>knowledge:<input name="knowledge" type="text" size="20"></p> 
         <p>comments:<input name="comments" type="text" size="120"></p>
         <p>rating:<input name="rating" type="text" size= "20"></p>
-        <button onclick="submit()">SUBMIT</button>
+        <button>SUBMIT</button>
     </form>
     <div class="box">
             <p id="name"></p>
