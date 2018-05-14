@@ -4,7 +4,7 @@ function newmentee() {
 
 }
 
-function submit(e){
+function submit2(e){
     e.preventDefault();
     e.stopPropagation();
     x=document.getElementById("details");
@@ -40,3 +40,4 @@ function colour() {
     else
         return red;
 }
+document.getElementById("details").addEventListener("submit2",submit2,false);
