@@ -40,4 +40,4 @@ function colour() {
     else
         return red;
 }
-document.getElementById("details").addEventListener("submit2",submit2,false);
+document.getElementById("details").addEventListener("submit",submit2,false);
