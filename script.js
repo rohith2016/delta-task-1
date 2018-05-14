@@ -8,22 +8,22 @@ function submit(e){
     e.preventDefault();
     e.stopPropagation();
     x=document.getElementById("details");
-    idv=x.Elements["ID"].value;
-    csv=x.Elements["CS"].value;
-    wev=x.Elements["WE"].value;
-    punv=x.Elements["pun"].value;
-    comv=x.Elements["com"].value;
-    knv=x.Elements["KN"].value;
-    ratv=x.Elements["rat"].value;
+    idv=x["ID"].value;
+    csv=x["CS"].value;
+    wev=x["WE"].value;
+    punv=x["pun"].value;
+    comv=x["com"].value;
+    knv=x["KN"].value;
+    ratv=x["rat"].value;
     
-    document.getElementById("name").innerHTML = "name:" + namev + "<br>";
-    document.getElementById("ID").innerHTML = "ID:" + idv + "<br>";
-    document.getElementById("CS").innerHTML = "coding skills" + csv + "<br>";
-    document.getElementById("WE").innerHTML = "work etcs:" + wev + "<br>";
-    document.getElementById("pun").innerHTML = "punctuality:" + punv + "<br>";
-    document.getElementById("KN").innerHTML = "knowledge:" + knv + "<br>";
-    document.getElementById("com").innerHTML = "comments:" + comv + "<br>";
-    document.getElementById("rat").innerHTML = "rating:" + ratv + "<br>";
+    document.getElementById("name").innerHTML += "name:" + namev + "<br>";
+    document.getElementById("ID").innerHTML += "ID:" + idv + "<br>";
+    document.getElementById("CS").innerHTML += "coding skills" + csv + "<br>";
+    document.getElementById("WE").innerHTML += "work etcs:" + wev + "<br>";
+    document.getElementById("pun").innerHTML += "punctuality:" + punv + "<br>";
+    document.getElementById("KN").innerHTML += "knowledge:" + knv + "<br>";
+    document.getElementById("com").innerHTML += "comments:" + comv + "<br>";
+    document.getElementById("rat").innerHTML += "rating:" + ratv + "<br>";
     return false;
     
 }
