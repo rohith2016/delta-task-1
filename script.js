@@ -28,15 +28,15 @@ function submit2(e) {
     y.ratv=x["rat"].value;
     document.getElementById("container").appendChild(y);
     
-    document.getElementById("number2").innerHTML = "number:" + numberv + "<br>";
-    document.getElementById("name2").innerHTML = "name:" + namev + "<br>";
-    document.getElementById("ID2").innerHTML = "ID:" + idv + "<br>";
-    document.getElementById("CS2").innerHTML = "coding skills" + csv + "<br>";
-    document.getElementById("WE2").innerHTML = "work etcs:" + wev + "<br>";
-    document.getElementById("pun2").innerHTML = "punctuality:" + punv + "<br>";
-    document.getElementById("KN2").innerHTML = "knowledge:" + knv + "<br>";
-    document.getElementById("com2").innerHTML = "comments:" + comv + "<br>";
-    document.getElementById("rat2").innerHTML = "rating:" + ratv + "<br>";
+    document.getElementById("number2").innerHTML = "number:" + y.numberv + "<br>";
+    document.getElementById("name2").innerHTML = "name:" + y.namev + "<br>";
+    document.getElementById("ID2").innerHTML = "ID:" + y.idv + "<br>";
+    document.getElementById("CS2").innerHTML = "coding skills" + y.csv + "<br>";
+    document.getElementById("WE2").innerHTML = "work etcs:" + y.wev + "<br>";
+    document.getElementById("pun2").innerHTML = "punctuality:" + y.punv + "<br>";
+    document.getElementById("KN2").innerHTML = "knowledge:" + y.knv + "<br>";
+    document.getElementById("com2").innerHTML = "comments:" + y.comv + "<br>";
+    document.getElementById("rat2").innerHTML = "rating:" + y.ratv + "<br>";
 
         
     /*document.getElementById("y").appendChild(namev);
