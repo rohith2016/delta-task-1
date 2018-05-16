@@ -5,7 +5,7 @@
     <title>Mentor's Assistant</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <link href="style.css" rel="stylesheet">
 </head>
 
@@ -13,30 +13,51 @@
     <div class="header">
         <h1>mentee management</h1>
     </div>
-    
+
     <form id="details">
-        <p>NAME:<input name="name" type="text" size="20"></p> 
-        <p>ID:<input name="ID" type="text" size="20"></p> 
-        <p>Coding skills:<input name="CS" type="text" size="80"></p> 
-        <p>work ethics:<input name="WE" type="text" size="80"></p> 
-        <p>punctuality:<input name="pun" type="text" size="80"></p> 
-        <p>knowledge:<input name="KN" type="text" size="20"></p> 
-        <p>comments:<input name="com" type="text" size="120"></p>
-        <p>rating:<input name="rat" type="text" size= "20"></p>
+        <p>MENTEE NUMBER:
+            <input name="number" type="number" size="5">
+        </p>
+        <p>NAME:
+            <input name="name" type="text" size="20">
+        </p>
+        <p>ID:
+            <input name="ID" type="text" size="20">
+        </p>
+        <p>Coding skills:
+            <input name="CS" type="text" size="80">
+        </p>
+        <p>work ethics:
+            <input name="WE" type="text" size="80">
+        </p>
+        <p>punctuality:
+            <input name="pun" type="text" size="80">
+        </p>
+        <p>knowledge:
+            <input name="KN" type="text" size="20">
+        </p>
+        <p>comments:
+            <input name="com" type="text" size="120">
+        </p>
+        <p>rating:
+            <input name="rat" type="text" size="20">
+        </p>
         <button>SUBMIT</button>
     </form>
-    <div class="box">
-            <p id="name"></p>
-            <p id="ID"></p>
-            <p id="CS"></p>
-            <p id="WE"></p>
-            <p id="pun"></p>
-            <p id="KN"></p>
-            <p id="com"></p>
-            <p id="rat"></p>
-            <button onclick="edit()">EDIT</button>
+    <div id="container">
+        <div id="box">
+            <p id="number2"></p>
+            <p id="name2"></p>
+            <p id="ID2"></p>
+            <p id="CS2"></p>
+            <p id="WE2"></p>
+            <p id="pun2"></p>
+            <p id="KN2"></p>
+            <p id="com2"></p>
+            <p id="rat2"></p>
+            <button id="change">EDIT</button>
             <button onclick="del()">DELETE</button>
-    
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
