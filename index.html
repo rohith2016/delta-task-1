@@ -1,65 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <title>Mentor's Assistant</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link href="style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+    <title>MENTEE MANAGEMENT</title>
 </head>
-
 <body>
-    <div class="header">
-        <h1>mentee management</h1>
-    </div>
+    <h1 align="center">MENTEE MANAGEMENT</h1><br>
 
-    <form id="details">
-        <p>MENTEE NUMBER:
-            <input name="number" type="number" size="5">
-        </p>
-        <p>NAME:
-            <input name="name" type="text" size="20">
-        </p>
-        <p>ID:
-            <input name="ID" type="text" size="20">
-        </p>
-        <p>Coding skills:
-            <input name="CS" type="text" size="80">
-        </p>
-        <p>work ethics:
-            <input name="WE" type="text" size="80">
-        </p>
-        <p>punctuality:
-            <input name="pun" type="text" size="80">
-        </p>
-        <p>knowledge:
-            <input name="KN" type="text" size="20">
-        </p>
-        <p>comments:
-            <input name="com" type="text" size="120">
-        </p>
-        <p>rating:
-            <input name="rat" type="text" size="20">
-        </p>
-        <button>SUBMIT</button>
-    </form>
-    <div id="container">
-        <div id="box">
-            <p id="number2"></p>
-            <p id="name2"></p>
-            <p id="ID2"></p>
-            <p id="CS2"></p>
-            <p id="WE2"></p>
-            <p id="pun2"></p>
-            <p id="KN2"></p>
-            <p id="com2"></p>
-            <p id="rat2"></p>
-            <button id="change">EDIT</button>
-            <button onclick="del()">DELETE</button>
-        </div>
-    </div>
-    <script src="script.js"></script>
+    <fieldset>
+        <p>SUBMIT DETAILS<p>
+        <input id="name" type="text" placeholder="NAME" >
+        <input id ="ID" type="text" placeholder="ID">
+        <input id="comment" type="text" placeholder="COMMENT">
+        <input id="rating" type="number" placeholder="RATING" min="1" max="5">
+        <input id="add" type="submit" value="Add" onclick="add()">
+    </fieldset><br>
+    <div>
+        <input id="sort" type="submit" value="Sort" onclick="sort()"></div>
+    <br>
+    <br>
+  
+    <table id="container"  align="center">
+            <tr id="title" >
+              <td>Name</td>
+              <td>ID</td>
+              <td>Comments</td>
+              <td>Rating</td>
+            </tr>
+    </table>
+    <script type="text/javascript" src="mentee.js"></script>
 </body>
-
 </html>

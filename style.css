@@ -1,15 +1,90 @@
-* {
-    box-sizing: border-box;
+body{
+background-color:#141414;
+font-family: Arial, Helvetica, sans-serif;
+}
+p{
+	font-size: 30px;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
+fieldset{
+	background-color: #c247a7;
+	text-align: center;
+	border-style: groove;
+	max-width: 7.5in;
+	margin: auto;
+		color:rgb(56, 95, 6);
+
+}
+div{text-align: center;
+	margin:auto;
 }
 
-.box {
-    flex-wrap: wrap;
-    background-color: color();
-    text-align: center;
-    border-style: groove
+#sort{
+	background: rgb(3, 110, 66);
+	border-radius: 10px;
+	width: 100px;
+	height: 40px;
+
+}
+
+#add{
+	border-radius: 6px;
+	width:60px;
+
+}
+#container{
+	border:double;
+	border-color: azure; 
+	padding: 0.5vw;
+	background-color: #e6e6fa;
+}
+tr:hover{
+	background-color: #777;
+}
+td{
+	border: 0.2vw solid indigo;
+	min-width: 20vw;
+	max-width: 20vw;
+	margin-top: 1%;
+	align-content: center;
+	overflow:hidden;
+	text-overflow: ellipsis;
+	max-height: 7in;
+	border-radius: 10%;
+}
+
+#title{ background-color: #7469E1;
+	border:solid black;
+	max-width: 80vw;
+	border-radius: 0%;
+}
+button{
+	background-color: rgb(252, 9, 9);
+	color:white;
+}
+#edit{
+	background-color: green;
+}
+h1{ 	max-width: 40vw;
+	margin: auto;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	color: #47b459;
+
+}
+@media only screen and (max-width: 800px){
+
+	#container{
+		transform: scale(0.6);
+		
+	} 
+	fieldset{
+		transform: scale(0.6);
+		max-width: 5in;
+	}
+	#edit{
+		width:5px;
+	}
+	#delete{
+		width:5px;
+	}	
 }
