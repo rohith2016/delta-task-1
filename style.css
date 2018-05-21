@@ -35,8 +35,8 @@ div{text-align: center;
 #container{
 	border:double;
 	border-color: azure; 
-	padding: 0.5vw;
-	background-color: #e6e6fa;
+padding-left: 0.5vw;
+background-color: #e6e6fa;
 }
 tr:hover{
 	background-color: #777;
@@ -70,21 +70,4 @@ h1{ 	max-width: 40vw;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 	color: #47b459;
 
-}
-@media only screen and (max-width: 800px){
-
-	#container{
-		transform: scale(0.6);
-		
-	} 
-	fieldset{
-		transform: scale(0.6);
-		max-width: 5in;
-	}
-	#edit{
-		width:5px;
-	}
-	#delete{
-		width:5px;
-	}	
 }

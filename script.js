@@ -1,15 +1,38 @@
  
  
  var swap;
- var rating;
+
+ var rate;
 
 
 
+ function del(row){   //enables deletimg a row
+     var line=row.parentNode.parentNode;
+     line.removeChild(row.parentNode);
+ 
+     }
 
- function add() {                                       
-    rating = document.getElementById("rating").value;
-    console.log(rating);
-    if(!(rating==1||rating==2||rating==3||rating==4||rating==5)){
+function edit(e){    //enables editing
+    var row=e.parentNode;
+    var button=document.getElementById("edit");
+    if (row.contentEditable == "true") {
+        row.contentEditable = "false";
+        var cells=row.getElementsByTagName('td');
+        rate=cells[3].innerHTML;
+        row.style.backgroundColor=color();
+        button.innerHTML = "Edit"; 
+        }
+    else {
+        row.contentEditable = "true";
+        button.innerHTML = "Submit";
+        row.style.backgroundColor="white";
+        }
+    }
+
+function add() {                                       
+    rate = document.getElementById("rate").value;
+    console.log(rate);
+    if(!(rate==1||rate==2||rate==3||rate==4||rate==5)){
         alert("value exceeds 5. Please retry.")
         return;
         }
@@ -40,7 +63,7 @@
     cell1.innerHTML=Name;
     cell2.innerHTML=rNo;
     cell3.innerHTML=comment;
-    cell4.innerHTML=rating;
+    cell4.innerHTML=rate;
     cell3.title=comment;
     cell1.title=Name;
     swap=true;
@@ -48,33 +71,7 @@
     } 
  
 
-
- function del(row){   //enables deletimg a row
-     var line=row.parentNode.parentNode;
-     line.removeChild(row.parentNode);
- 
-     }
-
-function edit(e){    //enables editing
-    var row=e.parentNode;
-    var button=document.getElementById("edit");
-    if (row.contentEditable == "true") {
-        row.contentEditable = "false";
-        var cells=row.getElementsByTagName('td');
-        rating=cells[3].innerHTML;
-        row.style.backgroundColor=color();
-        button.innerHTML = "Edit"; 
-        }
-    else {
-        row.contentEditable = "true";
-        button.innerHTML = "Submit";
-        row.style.backgroundColor="white";
-        }
-    }
-
-
-
-  function sort() {          
+  function sort() {           //sorts basedon rating
       var table, rows, swap, i, row1, row2, condition;
       table = document.getElementById("container");
       swap = true;
@@ -103,18 +100,17 @@ function edit(e){    //enables editing
 
  function  color() {  
     var shade;
-    if(rating==1)
+    if(rate==1)
         shade="red";
-    else if(rating==2)
+    else if(rate==2)
         shade="orange";
-    else if(rating==3)
+    else if(rate==3)
         shade="yellow ";
-    else if(rating==4)
-        shade="#adff2f";
-    else if(rating==5)
-        shade="green";
+    else if(rate==4)
+        shade="green ";
+    else if(rate==5)
+        shade="darkgreen";
 
     return shade;
-
   }
  
